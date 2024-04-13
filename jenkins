@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project
-               sh 'dotnet build --configuration Release'
+               sh 'dotnet build --configuration Release Devops_build.csproj'
             }
         }
 
